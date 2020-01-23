@@ -70,45 +70,12 @@
       </div>
     </nav>
 
-    <ul class="main-nav">
-      <li class="nav-item-1"><a href="#">Home</a></li>
-      <li class="nav-item-2"><a href="#">Home</a></li>
-      <li class="nav-item-3"><a href="#">Home</a></li>
-      <li class="nav-item-4"><a href="#">Home</a></li>
-      <li class="nav-item-5"><a href="#">Home</a></li>
-    </ul>
+    <div class="container-wrap">
+      <div class="area-left"> </div>
+      <div class="area-right"> </div>
+      <div class="content"> </div>
+    </div>
   </div>
 </template>
 
 <script></script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-.main-nav {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0;
-  grid-row-gap: 0;
-}
-
-.nav-item-1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.nav-item-2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-.nav-item-3 {
-  grid-area: 1 / 3 / 2 / 4;
-}
-
-.nav-item-4 {
-  grid-area: 1 / 4 / 2 / 5;
-}
-
-.nav-item-5 {
-  grid-area: 1 / 5 / 2 / 6;
-}
-</style>
