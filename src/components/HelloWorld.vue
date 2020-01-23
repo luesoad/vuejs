@@ -90,7 +90,6 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0;
   grid-row-gap: 0;
-  background: pink;
 }
 
 .nav-item-1 {
