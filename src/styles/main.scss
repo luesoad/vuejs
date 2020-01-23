@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:700&display=swap');
+
+
+
+@import "node_modules/bulma-scss/utilities/all";
+@import "node_modules/bulma-scss/base/all";
+@import "node_modules/bulma-scss/elements/all";
+@import "node_modules/bulma-scss/form/all";
+@import "node_modules/bulma-scss/components/all";
+
+
+@import "setup/custom-initial.scss";
+@import "setup/custom-derived.scss";
+
+
+//https://dev.to/lynnewritescode/my-scss-setup-within-a-vue-cli-3-project-4jan
