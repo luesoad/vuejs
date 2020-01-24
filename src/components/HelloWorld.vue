@@ -4,17 +4,17 @@
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
           <img
-            src="https://bulma.io/images/bulma-logo.png"
-            width="112"
-            height="28"
+                  src="https://bulma.io/images/bulma-logo.png"
+                  width="112"
+                  height="28"
           />
         </a>
         <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -47,7 +47,7 @@
               <a class="navbar-item">
                 Contact
               </a>
-              <hr class="navbar-divider" />
+              <hr class="navbar-divider"/>
               <a class="navbar-item">
                 Report an issue
               </a>
@@ -70,15 +70,29 @@
       </div>
     </nav>
 
-      <div class="content">
-    <div class="container-wrap">
-      <div class="area-left">
-        <h1>Area left</h1>
+    <div class="content">
+      <div class="container-wrap">
+        <div class="area-full">
+          <h1 class="header-title">
+            <span>L</span><span>e</span><span>a</span><span>r</span><span>n</span><span
+                  class="--span-1">&nbsp;</span><span>C</span><span>S</span><span>S</span><span
+                  class="--span-2">&nbsp;</span><span>G</span><span>r</span><span>i</span><span>d</span>
+          </h1>
+        </div>
+        <div class="area-left">
+          <h1>Area left</h1>
+        </div>
+        <div class="area-right">
+          <ul class="ul-fancy">
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+          </ul>
+        </div>
+
       </div>
-      <div class="area-right"></div>
-      <div class="content"></div>
     </div>
-      </div>
   </div>
 
 </template>

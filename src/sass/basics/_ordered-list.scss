@@ -1,0 +1,24 @@
+.content ul.ul-fancy {
+	list-style-type: none;
+	counter-reset: counter;
+
+	li {
+		margin-bottom: 1rem;
+	}
+}
+
+.ul-fancy li::before {
+	content: counter(counter);
+	counter-increment: counter;
+	display: block;
+	float: left;
+	font-size: 2em;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	text-align: center;
+	color: $dark;
+	font-weight: bold;
+	border-radius: 50%;
+	background: linear-gradient(to bottom right, $lightgrey, #fff 60%);
+}
