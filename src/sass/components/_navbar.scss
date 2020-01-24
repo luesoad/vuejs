@@ -3,15 +3,25 @@
 }
 
 .navbar-item, .navbar-link{
-	color: $lighterblue;
+	color: $light;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+	border-color: $dark;
 }
 
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active,
 .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
-	background-color: $blue;
-	color: $lighterblue;
+	background-color: $lightgrey;
+	color: $light;
 }
 
 .navbar-dropdown {
-	background: $blue;
+	background: $lightgrey;
+	border-radius: 0;
+}
+
+.navbar-dropdown a.navbar-item:focus, .navbar-dropdown a.navbar-item:hover {
+	background-color: $blue;
+	color: $dark;
 }

@@ -70,12 +70,17 @@
       </div>
     </nav>
 
+      <div class="content">
     <div class="container-wrap">
-      <div class="area-left"> </div>
-      <div class="area-right"> </div>
-      <div class="content"> </div>
+      <div class="area-left">
+        <h1>Area left</h1>
+      </div>
+      <div class="area-right"></div>
+      <div class="content"></div>
     </div>
+      </div>
   </div>
+
 </template>
 
 <script></script>

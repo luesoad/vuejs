@@ -5,22 +5,23 @@
 
 
 // Set your brand colors
-$darkblue: #00294B;;
-$blue: #114B5F;
-$lightblue: #456990;
-$lighterblue: #E4FDE1;
+$rosetaupe: #855A5C;;
+$blue: #86BEBF;
+$lightgrey: #8A8E91;
+$dark: #35363B;
+$light: #FDE2CF;
 
 // Update Bulma's global variables
 $family-sans-serif: "Maven Pro", sans-serif;
 $grey-dark: $blue;
-$grey-light: $lightblue;
-$primary: #253163;
-$link: $lightblue;
+$grey-light: $lightgrey;
+$primary: #855A5C;
+$link: $lightgrey;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $lighterblue;
+$body-background-color: $light;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
