@@ -37,14 +37,14 @@
 
 @media only screen and (min-width: 30em) {
 	.header-title {
-		grid-template-columns: repeat(8,3rem);
+		grid-template-columns: repeat(9,3rem);
 		grid-auto-rows: 3rem;
 	}
 
 	.header-title .\--span-1 {
 		-ms-grid-column-span: 3;
-		-ms-grid-column: 6;
-		grid-column: 6/span 3;
+		-ms-grid-column: 9;
+		grid-column: 7/span 3;
 	}
 
 	.header-title .\--span-2 {
@@ -80,6 +80,11 @@
 	.header-title:hover span:nth-of-type(4) {
 		transform: translate3d(11rem, 3rem, 0) rotate(-17deg);
 	}
+
+	.header-title:hover span:nth-of-type(5) {
+		transform: translate3d(17rem, 6rem, 0) rotate(5deg);
+	}
+
 	.header-title span:nth-of-type(5) {
 		transition-duration: .35s;
 	}
@@ -131,6 +136,12 @@
 		transition-duration: .35s;
 	}
 	.header-title:hover span:nth-of-type(14) {
+		transform: translate3d(-10rem, -.5rem, 0) rotate(-26deg);
+	}
+	.header-title:hover span:nth-of-type(15) {
+		transform: translate3d(-13.5rem, 3.5rem, 0) rotate(-20deg);
+	}
+	.header-title:hover span:nth-of-type(16) {
 		transform: translate3d(-10rem, -.5rem, 0) rotate(-26deg);
 	}
 	.header-title span {

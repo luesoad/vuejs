@@ -74,9 +74,8 @@
       <div class="container-wrap">
         <div class="area-full">
           <h1 class="header-title">
-            <span>L</span><span>e</span><span>a</span><span>r</span><span>n</span><span
-                  class="--span-1">&nbsp;</span><span>C</span><span>S</span><span>S</span><span
-                  class="--span-2">&nbsp;</span><span>G</span><span>r</span><span>i</span><span>d</span>
+            <span>I</span><span class="--span-2"></span><span>a</span><span>m</span><span class="--span-2"></span><span>a</span><span class="--span-1"></span>
+            <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
           </h1>
         </div>
         <div class="area-left">
