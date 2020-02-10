@@ -1,82 +1,10 @@
 <template>
   <div class="hello">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img
-                  src="https://bulma.io/images/bulma-logo.png"
-                  width="112"
-                  height="28"
-          />
-        </a>
-        <a
-                role="button"
-                class="navbar-burger burger"
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item">
-            Home
-          </a>
-
-          <a class="navbar-item">
-            Documentation
-          </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              More
-            </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                About
-              </a>
-              <a class="navbar-item">
-                Jobs
-              </a>
-              <a class="navbar-item">
-                Contact
-              </a>
-              <hr class="navbar-divider"/>
-              <a class="navbar-item">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light">
-                Log in
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
+    <main-navigation></main-navigation>
     <div class="content">
       <div class="container-wrap">
         <div class="area-full">
-          <h1 class="header-title">
-            <span>I</span><span class="--span-2"></span><span>a</span><span>m</span><span class="--span-3"></span><span>a</span><span class="--span-1"></span>
-            <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
-          </h1>
+          <header-animated></header-animated>
         </div>
         <div class="area-left">
           <h1>Area left</h1>
@@ -89,11 +17,18 @@
             <li>Lorem ipsum</li>
           </ul>
         </div>
-
       </div>
     </div>
   </div>
-
 </template>
 
-<script></script>
+<script>
+export default {
+  name: "HelloWorld",
+  data() {
+    return {
+      msg: "Welcome to Your Vue.js App"
+    };
+  }
+};
+</script>
