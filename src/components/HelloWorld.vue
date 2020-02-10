@@ -8,6 +8,7 @@
         </div>
         <div class="area-left">
           <h1>Area left</h1>
+          <card></card>
         </div>
         <div class="area-right">
           <ul class="ul-fancy">
@@ -16,6 +17,7 @@
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
           </ul>
+          <tabs></tabs>
         </div>
       </div>
     </div>
