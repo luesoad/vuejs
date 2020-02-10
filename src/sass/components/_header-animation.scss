@@ -21,8 +21,9 @@
 .header-title span {
 	display: flex;
 	align-items: center;
-	background-color: $rosetaupe;
+	background-color: $purple;
 	box-shadow: 0 0.15rem 0 $lightgrey;
+	color: $blue;
 }
 
 .header-title [class|="--span"] {
