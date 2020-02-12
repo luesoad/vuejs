@@ -5,6 +5,7 @@
       <div class="container-wrap">
         <div class="area-full">
           <header-animated></header-animated>
+          <animated-dot></animated-dot>
         </div>
         <div class="area-left">
           <h1>Area left</h1>
@@ -17,6 +18,7 @@
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
           </ul>
+          <button-fancy></button-fancy>
           <tabs></tabs>
         </div>
       </div>

@@ -6,11 +6,13 @@
 @import "node_modules/bulma-scss/form/all";
 @import "node_modules/bulma-scss/components/all";
 
-@import "components/navbar";
 @import "basics/cssgrid";
 @import "basics/headings";
 @import "basics/ordered-list";
+@import "components/animated-dot";
+@import "components/button-fancy";
 @import "components/header-animation";
+@import "components/navbar";
 @import "components/tabs";
 
 //@import "setup/custom-initial.scss";

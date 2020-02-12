@@ -17,7 +17,6 @@
           <p class="subtitle is-6">@johnsmith</p>
         </div>
       </div>
-
       <div class="content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Phasellus nec iaculis mauris. <a>@bulmaio</a>.
