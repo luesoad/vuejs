@@ -3,24 +3,31 @@
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:700&display=swap');
 
+//darkblue: #30323D
+// blue: #6886A7
+// bluegreen #8CADA7
+// apricot #F8BD7F
+// chestnut #B65144
+
+
 // Set your brand colors
-$purple: #54123b;
-$blue: #29c7ac;
-$darkred: #84142d;
-$lightgrey: $darkred;
-$lightred: #c02739;
+$darkblue: #30323D;
+$blue: #415469;
+$bluegreen: #8CADA7;
+$apricot: #F8BD7F;
+$chestnut: #B65144;
 
 // Update Bulma's global variables
 $family-sans-serif: "Maven Pro", sans-serif;
 $grey-dark: $blue;
-$grey-light: $lightgrey;
-$primary: $purple;
-$link: $lightgrey;
+$grey-light: $apricot;
+$primary: $darkblue;
+$link: $apricot;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $blue;
+$body-background-color: $apricot;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;

@@ -21,13 +21,13 @@
 .header-title span {
 	display: flex;
 	align-items: center;
-	background-color: $purple;
-	box-shadow: 0 0.15rem 0 $lightgrey;
+	background-color: $darkblue;
+	box-shadow: 0 0.15rem 0 $chestnut;
 	color: $blue;
 }
 
 .header-title [class|="--span"] {
-	background-color: $lightgrey;
+	background-color: $chestnut;
 }
 
 .header-title .\--span-1 {

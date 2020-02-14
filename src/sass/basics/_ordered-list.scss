@@ -4,7 +4,7 @@
 
 	li {
 		margin-bottom: 1rem;
-		color: $darkred
+		color: $primary
 	}
 }
 
@@ -18,8 +18,8 @@
 	height: 1em;
 	line-height: 1em;
 	text-align: center;
-	color: $darkred;
+	color: $bluegreen;
 	font-weight: bold;
 	border-radius: 50%;
-	background: linear-gradient(to bottom right, $lightgrey, #fff 60%);
+	background: linear-gradient(to bottom right, $apricot, #fff 60%);
 }

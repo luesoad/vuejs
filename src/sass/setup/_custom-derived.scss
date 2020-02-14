@@ -5,7 +5,7 @@ $primary: $turquoise !default;
 $info: $cyan !default;
 $success: $green !default;
 $warning: $yellow !default;
-$danger: $lightred !default;
+$danger: $chestnut !default;
 $light: $white-ter !default;
 $dark: $grey-darker !default;
 
@@ -17,8 +17,8 @@ $green-invert: findColorInvert($green) !default;
 $turquoise-invert: findColorInvert($turquoise) !default;
 $cyan-invert: findColorInvert($cyan) !default;
 $blue-invert: findColorInvert($blue) !default;
-$purple-invert: findColorInvert($purple) !default;
-$red-invert: findColorInvert($lightred) !default;
+$purple-invert: findColorInvert($darkblue) !default;
+$red-invert: findColorInvert($chestnut) !default;
 
 $primary-invert: findColorInvert($primary) !default;
 $primary-light: findLightColor($primary) !default;
@@ -63,7 +63,7 @@ $text-strong: $grey-darker !default;
 
 // Code colors
 
-$code: $lightred !default;
+$code: $chestnut !default;
 $code-background: $background !default;
 
 $pre: $text !default;
@@ -75,7 +75,7 @@ $link: $blue !default;
 $link-invert: findColorInvert($link) !default;
 $link-light: findLightColor($link) !default;
 $link-dark: findDarkColor($link) !default;
-$link-visited: $purple !default;
+$link-visited: $darkblue !default;
 
 $link-hover: $grey-darker !default;
 $link-hover-border: $grey-light !default;

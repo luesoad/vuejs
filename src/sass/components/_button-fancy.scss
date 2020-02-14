@@ -5,10 +5,10 @@ body {
 .button-fancy {
 	position: relative;
 	appearance: none;
-	background: $purple;
+	background: $darkblue;
 	padding: 1em 2em;
 	border: none;
-	color: $blue;
+	color: $bluegreen;
 	font-size: 1.2em;
 	cursor: pointer;
 	overflow: hidden;
@@ -25,7 +25,7 @@ body {
 	top: var(--y);
 	width: var(--size);
 	height: var(--size);
-	background: radial-gradient(circle closest-side, $darkred, transparent);
+	background: radial-gradient(circle closest-side, $chestnut, transparent);
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	transition: width .2s ease, height .2s ease;
