@@ -8,7 +8,7 @@ export default new Router({
     {
       path: "/",
       name: "Home",
-      component: require("./components/HelloWorld.vue").default
+      component: () => import("@/views/Home")
     }
   ]
 });

@@ -12,14 +12,23 @@ const Components = {
   Card,
   HeaderAnimated,
   MainNavigation,
-  Tabs
+  Tabs,
+  Vue
 };
 
-Vue.component("animated-dot", AnimatedDot);
-Vue.component("button-fancy", ButtonFancy);
-Vue.component("card", Card);
-Vue.component("header-animated", HeaderAnimated);
-Vue.component("main-navigation", MainNavigation);
-Vue.component("tabs", Tabs);
+Vue.component("animated-dot", require("./AnimatedDot.vue").default);
+Vue.component("button-fancy", require("./ButtonFancy.vue").default);
+Vue.component("card", require("./Card.vue").default);
+Vue.component(
+  "header-animated",
+  require("./HeaderAnimated.vue").default
+);
+Vue.component(
+  "main-navigation",
+  require("./MainNavigation.vue").default
+);
+Vue.component("tabs", require("./Tabs.vue").default);
+
+
 
 export default Components;

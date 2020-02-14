@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <main-navigation />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import MainNavigation from "./components/MainNavigation";
 
 export default {
-  name: "app",
+  name: "App",
   components: {
-    HelloWorld
+    MainNavigation
   }
 };
 </script>

@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <main-navigation></main-navigation>
     <div class="content">
       <div class="container-wrap">
         <div class="area-full">
@@ -9,7 +8,7 @@
         </div>
         <div class="area-left">
           <h1>Area left</h1>
-          <card></card>
+         
         </div>
         <div class="area-right">
           <ul class="ul-fancy">
@@ -28,11 +27,8 @@
 
 <script>
 export default {
-  name: "HelloWorld",
-  data() {
-    return {
-      msg: "Welcome to Your Vue.js App"
-    };
-  }
+  name: "home",
+  components: {
+  },
 };
 </script>
