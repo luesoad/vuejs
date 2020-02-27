@@ -1,4 +1,5 @@
 # vueproject
+This project uses vuejs with webpack. It is a playground to practice working with vuejs.
 
 ## Project setup
 ```
