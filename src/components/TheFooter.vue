@@ -6,9 +6,7 @@
       </router-link>
       <span class="attribution">
         An interactive learning project from
-        <a rel="noopener noreferrer" target="blank" href=""
-          >Lorem </a
-        > Bla
+        <a rel="noopener noreferrer" target="blank" href="">Lorem</a>Bla
       </span>
     </div>
   </footer>
