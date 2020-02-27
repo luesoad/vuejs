@@ -1,7 +1,15 @@
 .card-wrp {
 	display: flex;
+	flex-direction: column;
 
 	figure.image {
 		margin: 0;
+	}
+}
+
+
+@media (min-width: $screen-md-min) {
+	.card-wrp {
+		flex-direction: row;
 	}
 }
