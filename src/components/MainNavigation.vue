@@ -7,7 +7,7 @@
   >
     <div class="navbar-brand">
       <router-link :to="{ name: 'Home' }" exact class="navbar-item">
-        <img src="" alt="logo" class="logo" />
+        <img src="@/assets/icons/logo.svg" alt="logo" class="logo" />
       </router-link>
       <a
         role="button"
