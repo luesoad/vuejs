@@ -24,13 +24,13 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
+        <router-link :to="{ name: 'Home' }" exact class="navbar-item">
           Home
-        </a>
+        </router-link>
 
-        <a class="navbar-item">
-          Documentation
-        </a>
+        <router-link :to="{ name: 'About' }" exact class="navbar-item">
+          About
+        </router-link>
 
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
