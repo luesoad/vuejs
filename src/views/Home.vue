@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import Card from "@/components/Card";
 import AnimatedDot from "@/components/AnimatedDot.vue";
 import ButtonFancy from "@/components/ButtonFancy.vue";
 import HeaderAnimated from "@/components/HeaderAnimated.vue";
@@ -37,7 +36,6 @@ export default {
   components: {
     AnimatedDot,
     ButtonFancy,
-    Card,
     HeaderAnimated,
     Tabs
   }
