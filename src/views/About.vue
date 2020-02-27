@@ -1,14 +1,14 @@
 <template>
-  <button-fancy></button-fancy>
+  <animated-dot></animated-dot>
 </template>
 
 <script>
-import ButtonFancy from "@/components/ButtonFancy.vue";
+import AnimatedDot from "@/components/AnimatedDot.vue";
 
 export default {
-  name: "About",
+  name: "Home",
   components: {
-    ButtonFancy
+    AnimatedDot
   }
 };
 </script>
