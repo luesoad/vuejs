@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="container">
-      <router-link class="" :to="{ name: 'home', params: {} }">
+      <router-link class="" :to="{ name: 'Home', params: {} }">
         Text
       </router-link>
       <span class="attribution">

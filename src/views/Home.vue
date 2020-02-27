@@ -8,9 +8,9 @@
         </div>
         <div class="area-left">
           <h1>Area left</h1>
-
         </div>
         <div class="area-right">
+          <card></card>
           <ul class="ul-fancy">
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
@@ -28,6 +28,7 @@
 <script>
 import AnimatedDot from "@/components/AnimatedDot.vue";
 import ButtonFancy from "@/components/ButtonFancy.vue";
+import Card from "@/components/Card.vue";
 import HeaderAnimated from "@/components/HeaderAnimated.vue";
 import Tabs from "@/components/Tabs.vue";
 
@@ -36,6 +37,7 @@ export default {
   components: {
     AnimatedDot,
     ButtonFancy,
+    Card,
     HeaderAnimated,
     Tabs
   }
