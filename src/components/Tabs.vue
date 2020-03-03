@@ -1,10 +1,39 @@
 <template>
-  <div class="tabs">
-    <ul>
-      <li class="is-active"><a>Pictures</a></li>
-      <li><a>Music</a></li>
-      <li><a>Videos</a></li>
-      <li><a>Documents</a></li>
-    </ul>
+  <div class="content">
+    <div class="tabs">
+      <ul>
+        <li
+          v-for="(tab, idx) in tabs"
+          :key="idx"
+          :class="{ 'is-active': tab.isActive }"
+        >
+          <a :href="tab.href" @click="selectTab(tab)">{{ tab.name }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="tabs-details">
+      <slot></slot>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      tabs: []
+    };
+  },
+
+  created() {
+    this.tabs = this.$children;
+  },
+  methods: {
+    selectTab(selectedTab) {
+      this.tabs.forEach(tab => {
+        tab.isActive = tab.name == selectedTab.name;
+      });
+    }
+  }
+};
+</script>
