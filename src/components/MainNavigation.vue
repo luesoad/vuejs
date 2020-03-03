@@ -34,22 +34,18 @@
 
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
-            More
+            CSS Playground
           </a>
 
           <div class="navbar-dropdown">
-            <a class="navbar-item">
-              About
-            </a>
-            <a class="navbar-item">
-              Jobs
-            </a>
+            <router-link :to="{ name: 'Animations' }" exact class="navbar-item">
+              Animations
+            </router-link>
+            <router-link :to="{ name: 'FancyStuff' }" exact class="navbar-item">
+              Fancy stuff
+            </router-link>
             <a class="navbar-item">
               Contact
-            </a>
-            <hr class="navbar-divider" />
-            <a class="navbar-item">
-              Report an issue
             </a>
           </div>
         </div>

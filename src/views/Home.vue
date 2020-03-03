@@ -4,10 +4,11 @@
       <div class="container-wrap">
         <div class="area-full">
           <header-animated></header-animated>
+          <img src="@/assets/images/mb.jpg" alt="development"/>
         </div>
+
         <div class="area-left">
           <h1>Responsive Webdesign (coming soon)</h1>
-          <button-fancy></button-fancy>
           <ul class="ul-fancy">
             <li>Lorem ipsum</li>
             <li>Lorem ipsum</li>
@@ -24,14 +25,12 @@
 </template>
 
 <script>
-import ButtonFancy from "@/components/ButtonFancy.vue";
 import Card from "@/components/Card.vue";
 import HeaderAnimated from "@/components/HeaderAnimated.vue";
 
 export default {
   name: "Home",
   components: {
-    ButtonFancy,
     Card,
     HeaderAnimated
   }

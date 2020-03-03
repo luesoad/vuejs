@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <animated-dot></animated-dot>
+  <div class="content">
+    <img src="@/assets/images/mb.jpg" alt="development"/>
     <tabs>
       <tab name="Services" :selected="true">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -19,14 +19,12 @@
 </template>
 
 <script>
-import AnimatedDot from "@/components/AnimatedDot.vue";
 import Tab from "@/components/Tab.vue";
 import Tabs from "@/components/Tabs.vue";
 
 export default {
   name: "Home",
   components: {
-    AnimatedDot,
     Tab,
     Tabs
   }
