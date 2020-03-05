@@ -33,9 +33,13 @@
         </router-link>
 
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
+          <router-link
+            :to="{ name: 'cssPlayground' }"
+            exact
+            class="navbar-link"
+          >
             CSS Playground
-          </a>
+          </router-link>
 
           <div class="navbar-dropdown">
             <router-link :to="{ name: 'Animations' }" exact class="navbar-item">

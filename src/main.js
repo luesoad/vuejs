@@ -7,10 +7,8 @@ require("./sass/main.scss");
 Vue.config.productionTip = false;
 
 new Vue({
+  el: "#app",
   router,
   store,
-  render: h => h(App),
-  el: "#app",
-  template: "<App/>",
-  components: { App }
+  render: h => h(App)
 }).$mount("#app");

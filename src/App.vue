@@ -15,6 +15,11 @@ export default {
   components: {
     TheFooter,
     MainNavigation
+  },
+  data() {
+    return {
+      title: "Vue Playground"
+    };
   }
 };
 </script>
