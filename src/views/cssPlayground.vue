@@ -1,8 +1,11 @@
 <template>
   <div class="content">
-    <img src="@/assets/images/mb.jpg" alt="development"/>
-    <router-view></router-view>
+    <img src="@/assets/images/mb.jpg" alt="development" />
   </div>
 </template>
 
-
+<script>
+export default {
+  name: "cssPlayground"
+};
+</script>

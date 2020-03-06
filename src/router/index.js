@@ -28,20 +28,17 @@ const routes = [
   {
     path: "/CSS-Playground",
     name: "cssPlayground",
-    component: cssPlayground,
-    children: [
-      {
-        path: "Animations",
-        name: "Animations",
-        component: Animations
-      },
-
-      {
-        path: "FancyStuff",
-        name: "FancyStuff",
-        component: FancyStuff
-      }
-    ]
+    component: cssPlayground
+  },
+  {
+    path: "/CSS-Playground/Animations",
+    name: "Animations",
+    component: Animations
+  },
+  {
+    path: "/CSS-Playground/FancyStuff",
+    name: "FancyStuff",
+    component: FancyStuff
   }
 ];
 
