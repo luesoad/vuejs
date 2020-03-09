@@ -12,12 +12,12 @@
 
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active,
 .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
-	background-color: $apricot;
-	color: $primary;
+	background-color: transparent;
+	color: $apricot;
 }
 
 .navbar-dropdown {
-	background: $apricot;
+	background: $blue;
 	border-radius: 0;
 }
 

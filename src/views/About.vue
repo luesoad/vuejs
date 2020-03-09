@@ -1,9 +1,12 @@
 <template>
   <div class="content">
-    <img src="@/assets/images/mb.jpg" alt="development"/>
+    <img src="@/assets/images/mb.jpg" alt="development" />
     <tabs>
       <tab name="Services" :selected="true">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
       </tab>
       <tab name="Pricing">
         <p>

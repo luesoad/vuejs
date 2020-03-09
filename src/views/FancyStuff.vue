@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <img src="@/assets/images/mb.jpg" alt="development"/>
+    <img src="@/assets/images/mb.jpg" alt="development" />
     <button-fancy></button-fancy>
   </div>
 </template>

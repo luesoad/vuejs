@@ -1,61 +1,82 @@
 <template>
-  <nav
-    class="navbar"
-    role="navigation"
-    aria-label="main navigation"
-    id="main-menu"
-  >
-    <div class="navbar-brand">
-      <router-link :to="{ name: 'Home' }" exact class="navbar-item">
-        <img src="@/assets/icons/logo.svg" alt="logo" class="logo" />
-      </router-link>
-      <a
-        role="button"
-        class="navbar-burger burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
+  <div>
+    <nav
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+      id="main-menu"
+    >
+      <div class="navbar-brand">
         <router-link :to="{ name: 'Home' }" exact class="navbar-item">
-          Home
+          <img src="@/assets/icons/logo.svg" alt="logo" class="logo" />
         </router-link>
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-        <router-link :to="{ name: 'About' }" exact class="navbar-item">
-          About
-        </router-link>
-
-        <div class="navbar-item has-dropdown is-hoverable">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
           <router-link
-            :to="{ name: 'cssPlayground' }"
+            :to="{ name: 'home' }"
             exact
-            class="navbar-link"
+            class="navbar-item"
+            tag="li"
           >
-            CSS Playground
+            <a class="navbar-link is-arrowless">Home</a>
           </router-link>
 
-          <div class="navbar-dropdown">
-            <router-link :to="{ name: 'Animations' }" exact class="navbar-item">
-              Animations
+          <router-link
+            :to="{ name: 'about' }"
+            exact
+            class="navbar-item"
+            tag="li"
+          >
+            <a class="navbar-link is-arrowless">About</a>
+          </router-link>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <router-link
+              :to="{ name: 'cssplayground' }"
+              exact
+              class="navbar-item"
+              tag="li"
+            >
+              <a class="navbar-link">CSS Playground</a>
             </router-link>
-            <router-link :to="{ name: 'FancyStuff' }" exact class="navbar-item">
-              Fancy stuff
-            </router-link>
-            <a class="navbar-item">
-              Contact
-            </a>
+
+            <div class="navbar-dropdown">
+              <router-link
+                :to="{ name: 'animations' }"
+                exact
+                class="navbar-item"
+                tag="li"
+              >
+                <a class="navbar-link is-arrowless">Animations</a>
+              </router-link>
+              <router-link
+                :to="{ name: 'fancystuff' }"
+                exact
+                class="navbar-item"
+                tag="li"
+              >
+                <a class="navbar-link is-arrowless">Fancy stuff</a>
+              </router-link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+    <router-view />
+  </div>
 </template>
 
 <script>

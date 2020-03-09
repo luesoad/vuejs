@@ -4,7 +4,7 @@
       <div class="container-wrap">
         <div class="area-full">
           <header-animated></header-animated>
-          <img src="@/assets/images/mb.jpg" alt="development"/>
+          <img src="@/assets/images/mb.jpg" alt="development" />
         </div>
 
         <div class="area-left">

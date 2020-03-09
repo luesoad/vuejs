@@ -1,47 +1,44 @@
 import Vue from "vue";
-import Router from "vue-router";
+import VueRouter from "vue-router";
 import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Animations from "@/views/Animations.vue";
 import cssPlayground from "@/views/cssPlayground.vue";
 import FancyStuff from "@/views/FancyStuff.vue";
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-    meta: {
-      title: "Vue Playground"
+export default new VueRouter({
+  mode: "history",
+  routes: [
+    {
+      path: "/home",
+      name: "home",
+      component: Home,
+      meta: {
+        title: "home"
+      }
+    },
+    { path: "*", redirect: "/home" },
+    {
+      path: "/about",
+      name: "about",
+      component: About,
+    },
+    {
+      path: "/css-playground",
+      name: "cssPlayground",
+      component: cssPlayground
+    },
+    {
+      path: "/css-playground/animations",
+      name: "animations",
+      component: Animations
+    },
+    {
+      path: "/css-playground/fancystuff",
+      name: "fancystuff",
+      component: FancyStuff
     }
-  },
-  {
-    path: "/About",
-    name: "About",
-    component: About,
-    meta: {
-      title: "About"
-    }
-  },
-  {
-    path: "/CSS-Playground",
-    name: "cssPlayground",
-    component: cssPlayground
-  },
-  {
-    path: "/CSS-Playground/Animations",
-    name: "Animations",
-    component: Animations
-  },
-  {
-    path: "/CSS-Playground/FancyStuff",
-    name: "FancyStuff",
-    component: FancyStuff
-  }
-];
-
-export default new Router({
-  routes
+  ]
 });
