@@ -10,19 +10,21 @@
 }
 
 .triangle-top-left__big {
-	width: 0;
-	height: 0;
-	right: 0;
 	border-top: 160px solid $darkblue;
 	border-right: 160px solid transparent;
-	z-index: 1;
+	position: absolute;
+	left: 0;
+}
+
+.triangle-top-right__big {
+	border-top: 160px solid $darkblue;
+	border-left: 160px solid transparent;
+	position: absolute;
+	right: 0;
 }
 
 .triangle-top-left__small {
-	width: 0;
-	height: 0;
-	right: 0;
-	border-top: 69px solid #415469;
+	border-top: 69px solid $blue;
 	border-right: 69px solid transparent;
 	top: 52px;
 	left: 91px;
@@ -30,7 +32,17 @@
 	position: absolute;
 }
 
-.circle-top-left {
+.triangle-top-right__small {
+	border-top: 69px solid $blue;
+	border-left: 69px solid transparent;
+	top: 52px;
+	right: 91px;
+	z-index: 1;
+	position: absolute;
+}
+
+.circle-top-left,
+.circle-top-right {
 	position: absolute;
 	border-top-left-radius: 220px;
 	border-top-right-radius: 220px;
@@ -40,8 +52,13 @@
 	background-color: $bluegreen;
 	top: 66px;
 	left: -9px;
-	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
+}
+
+.circle-top-right {
+	right: -9px;
+	left: auto;
+	transform: rotate(-90deg);
 }
 
 
@@ -52,6 +69,11 @@
 		border-right: 220px solid transparent;
 	}
 
+	.triangle-top-right__big {
+		border-top: 220px solid $darkblue;
+		border-left: 220px solid transparent;
+	}
+
 	.triangle-top-left__small {
 		border-top: 80px solid $blue;
 		border-right: 80px solid transparent;
@@ -59,7 +81,15 @@
 		left: 140px;
 	}
 
-	.circle-top-left {
+	.triangle-top-right__small {
+		border-top: 80px solid $blue;
+		border-left: 80px solid transparent;
+		top: 52px;
+		right: 140px;
+	}
+
+	.circle-top-left,
+	.circle-top-right {
 		border-top-left-radius: 330px;
 		border-top-right-radius: 330px;
 		height: 300px;
@@ -68,7 +98,8 @@
 }
 
 @media (min-width: $screen-md-min) {
-	.triangle-top-left__small {
+	.triangle-top-left__small,
+	.triangle-top-right__small {
 		top: 56px;
 	}
 }
