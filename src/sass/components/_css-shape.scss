@@ -7,99 +7,135 @@
 		grid-area: 3/1/1/1;
 		height: 500px;
 	}
-}
 
-.triangle-top-left__big {
-	border-top: 160px solid $darkblue;
-	border-right: 160px solid transparent;
-	position: absolute;
-	left: 0;
-}
+	&__triangle__big {
+		border-top: 160px solid $darkblue;
+		border-right: 160px solid transparent;
+		position: absolute;
+		left: 0;
 
-.triangle-top-right__big {
-	border-top: 160px solid $darkblue;
-	border-left: 160px solid transparent;
-	position: absolute;
-	right: 0;
-}
+		&--right {
+			display: none;
+		}
+	}
 
-.triangle-top-left__small {
-	border-top: 69px solid $blue;
-	border-right: 69px solid transparent;
-	top: 52px;
-	left: 91px;
-	z-index: 1;
-	position: absolute;
-}
+	&__triangle__small {
+		border-top: 69px solid $blue;
+		border-right: 69px solid transparent;
+		top: 52px;
+		left: 91px;
+		z-index: 1;
+		position: absolute;
 
-.triangle-top-right__small {
-	border-top: 69px solid $blue;
-	border-left: 69px solid transparent;
-	top: 52px;
-	right: 91px;
-	z-index: 1;
-	position: absolute;
-}
+		&--right {
+			display: none;
+		}
+	}
 
-.circle-top-left,
-.circle-top-right {
-	position: absolute;
-	border-top-left-radius: 220px;
-	border-top-right-radius: 220px;
-	border-bottom: 0;
-	height: 200px;
-	width: 400px;
-	background-color: $bluegreen;
-	top: 66px;
-	left: -9px;
-	transform: rotate(90deg);
-}
+	&__circle {
+		position: absolute;
+		border-top-left-radius: 220px;
+		border-top-right-radius: 220px;
+		border-bottom: 0;
+		height: 200px;
+		width: 400px;
+		background-color: $bluegreen;
+		top: 66px;
+		left: -9px;
+		transform: rotate(90deg);
 
-.circle-top-right {
-	right: -9px;
-	left: auto;
-	transform: rotate(-90deg);
+		&--right {
+			right: -9px;
+			left: auto;
+			transform: rotate(-90deg);
+			display: none;
+		}
+	}
 }
-
 
 @media (min-width: $screen-sm-min) {
 
-	.triangle-top-left__big {
-		border-top: 220px solid $darkblue;
-		border-right: 220px solid transparent;
-	}
+	.css-shape {
+		&__triangle__big--left {
+			border-top: 180px solid $darkblue;
+			border-right: 180px solid transparent;
+		}
 
-	.triangle-top-right__big {
-		border-top: 220px solid $darkblue;
-		border-left: 220px solid transparent;
-	}
+		&__triangle__big--right {
+			border-right: unset;
+			left: auto;
+			right: 0;
+			border-top: 180px solid $darkblue;
+			border-left: 180px solid transparent;
+			display: block;
+		}
 
-	.triangle-top-left__small {
-		border-top: 80px solid $blue;
-		border-right: 80px solid transparent;
-		top: 52px;
-		left: 140px;
-	}
+		&__triangle__small {
+			border-top: 80px solid $blue;
+			border-right: 80px solid transparent;
+			top: 52px;
+			left: 100px;
 
-	.triangle-top-right__small {
-		border-top: 80px solid $blue;
-		border-left: 80px solid transparent;
-		top: 52px;
-		right: 140px;
-	}
+			&--right {
+				border-left: 80px solid transparent;
+				border-right: unset;
+				left: unset;
+				right: 100px;
+				display: block;
+			}
+		}
+		
+		&__circle {
+			border-top-left-radius: 165px;
+			border-top-right-radius: 165px;
+			height: 150px;
+			width: 300px;
+			display: block;
+			left: 25px;
 
-	.circle-top-left,
-	.circle-top-right {
-		border-top-left-radius: 330px;
-		border-top-right-radius: 330px;
-		height: 300px;
-		width: 600px;
+			&--right {
+				left: auto;
+				right: 25px;
+			}
+		}
 	}
 }
 
 @media (min-width: $screen-md-min) {
-	.triangle-top-left__small,
-	.triangle-top-right__small {
-		top: 56px;
+	.css-shape {
+
+		&__triangle__big--left {
+			border-top: 220px solid $darkblue;
+			border-right: 220px solid transparent;
+		}
+
+		&__triangle__big--right {
+			border-top: 220px solid $darkblue;
+			border-left: 220px solid transparent;
+		}
+
+		&__triangle__small {
+			top: 56px;
+			left: 140px;
+
+			&--right {
+				left: auto;
+				right: 140px;
+			}
+		}
+
+		&__circle {
+			border-top-left-radius: 330px;
+			border-top-right-radius: 330px;
+			height: 300px;
+			width: 600px;
+			display: block;
+			left: -9px;
+
+			&--right {
+				left: auto;
+				right: -9px;
+			}
+		}
 	}
 }
