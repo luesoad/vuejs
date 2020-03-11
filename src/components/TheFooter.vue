@@ -3,6 +3,7 @@
     <div class="footer">
       <div class="container footer__container content">
         <div class="footer__circle"></div>
+        <div class="footer__circle2"></div>
         <img src="@/assets/icons/dots.svg" alt="dots" class="footer__dots" />
         <div class="third">
           <h2>Vue Playground</h2>

@@ -13,21 +13,12 @@ footer {
 		margin: 0 auto;
 	}
 
-	&__circle {
-		position: absolute;
-		background-color: $darkblue;
-		border-radius: 50%;
-		height: 345px;
-		width: 345px;
-		right: -345px;
-		bottom: -220px;
-	}
-
 	&__dots {
 		height: 80px;
 		width: 80px;
 		position: absolute;
 		right: -63px;
+		z-index: 1;
 	}
 }
 
@@ -37,6 +28,31 @@ footer {
 		&__container {
 			display: flex;
 			justify-content: space-between;
+		}
+	}
+}
+
+@media (min-width: $screen-md-min) {
+
+	.footer {
+		&__circle {
+			position: absolute;
+			background-color: $darkblue;
+			border-radius: 50%;
+			height: 345px;
+			width: 345px;
+			right: -345px;
+			bottom: -220px;
+			z-index: 1;
+		}
+		&__circle2 {
+			position: absolute;
+			background-color: $blue;
+			border-radius: 50%;
+			height: 345px;
+			width: 345px;
+			top: -220px;
+			right: -345px;
 		}
 	}
 }
