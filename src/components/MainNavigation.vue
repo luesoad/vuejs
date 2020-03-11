@@ -70,6 +70,14 @@
               >
                 <a class="navbar-link is-arrowless">Fancy stuff</a>
               </router-link>
+              <router-link
+                :to="{ name: 'tables' }"
+                exact
+                class="navbar-item"
+                tag="li"
+              >
+                <a class="navbar-link is-arrowless">Tables</a>
+              </router-link>
             </div>
           </div>
         </div>

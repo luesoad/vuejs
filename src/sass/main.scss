@@ -8,13 +8,14 @@
 
 @import "basics/cssgrid";
 @import "basics/headings";
-@import "basics/ordered-list";
+@import "components/ordered-list";
 @import "components/animated-dot";
 @import "components/button-fancy";
 @import "components/card";
 @import "components/css-shape";
-@import "components/footer";
-@import "components/grids";
+@import "layout/footer";
+@import "grid/columns";
 @import "components/header-animation";
 @import "components/navbar";
+@import "elements/table";
 @import "components/tabs";

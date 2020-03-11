@@ -5,6 +5,7 @@ import About from "@/views/About.vue";
 import Animations from "@/views/Animations.vue";
 import cssPlayground from "@/views/cssPlayground.vue";
 import FancyStuff from "@/views/FancyStuff.vue";
+import Table from "@/views/Table.vue";
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ export default new VueRouter({
       path: "/css-playground/fancystuff",
       name: "fancystuff",
       component: FancyStuff
+    },
+    {
+      path: "/css-playground/tables",
+      name: "tables",
+      component: Table
     }
   ]
 });

@@ -1,0 +1,29 @@
+.table__wrap {
+	margin: 50px 15px;
+}
+
+.content .table {
+	thead {
+		background: $blue;
+	}
+
+	&.is-striped tbody tr:not(.is-selected):nth-child(even) {
+		background: $bluegreen;
+	}
+
+	thead th {
+		color: $white;
+		border-color: $bluegreen;
+	}
+
+	td, th {
+		padding: 15px;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+
+	.table__wrap {
+		margin: 50px auto;
+	}
+}
