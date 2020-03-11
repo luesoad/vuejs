@@ -1,3 +1,42 @@
 footer {
 	background: $chestnut;
 }
+
+.footer {
+	padding: 80px 0;
+	overflow: hidden;
+
+	&__container {
+		position: relative;
+		z-index: 1;
+		padding: 0 20px;
+		margin: 0 auto;
+	}
+
+	&__circle {
+		position: absolute;
+		background-color: $darkblue;
+		border-radius: 50%;
+		height: 345px;
+		width: 345px;
+		right: -345px;
+		bottom: -140px;
+	}
+
+	&__dots {
+		height: 80px;
+		width: 80px;
+		position: absolute;
+		right: -63px;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+
+	.footer {
+		&__container {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
